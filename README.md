@@ -1,4 +1,4 @@
-# LPG-00
+# LinkPage-00
 LinkPage | HTML, CSS, JS - Created for Learning Purposes
 
 
