@@ -6,7 +6,7 @@ body, html {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Helvetica', Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -25,14 +25,14 @@ body {
 }
 
 main {
-    position: relative;
+    position: center;
     opacity: 0;
-    transition: opacity 1.0s ease-in-out;
+    transition: opacity 1.7s ease-in-out;
 
 }
 
 header {
-    margin-top: 1em;
+    margin-top: 7em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -44,17 +44,17 @@ header > img {
     height: 9em;
     border-radius: 100px;
     border: 2px solid #fff;
-    box-shadow: rgb(28 32 93 / 35%) 12px 10px 90px 1px;
+    box-shadow: rgb(28 32 93 / 50%) 12px 10px 90px 10px;
 }
 
 header > h1 {
     display: inline-block;
-    font-size: 1em;
+    font-size: 1.1em;
     font-weight: bold;
-    border-radius: 1em;
+    border-radius: 2em;
     background-color: #000a;
     color: #fff;
-    padding: 0.8em 6em;
+    padding: 0.6em 3em;
     border: 1px solid #fffa;
 }
 
@@ -63,16 +63,21 @@ ul {
     list-style: none;
     margin: auto;
     padding: 2em;
-    max-width: 480px;
+    max-width: 425px;
     }
 
 ul > li {
     background-color: #fffa;
-    backdrop-filter: blur(1px) saturate(160%) contrast(180%); 
-    border-radius: 10em;
+    backdrop-filter: blur(1px) saturate(160%) contrast(180%);
+    border-radius: 1em;
     padding: 1em;
     margin: 1.4em 0 auto;
-    box-shadow: rgb(28 32 93 / 35%) 12px 10px 90px 1px;
+    box-shadow: rgba(12, 12, 12, 0.5) 12px 10px 90px 1px;
+    transition: transform .2s; /* Animation */
+}
+
+ul > li:hover {
+    transform: scale(1.05);
 }
 
 ul > li > a {
@@ -80,7 +85,7 @@ ul > li > a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 0.6em;
+    gap: 0.8em;
 }
 
 a {
